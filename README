@@ -17,7 +17,7 @@ This Docker image provides a containerized setup for running the Divi daemon (di
 ### Cloning the repository
 
 ```bash
-git clone https://github.com/TheCritic/divi_v2.git
+git clone https://github.com/TheCriticalSkiff/divi-docker.git
 ```
 
 ### Building the Image
