@@ -1,0 +1,49 @@
+# Private notes
+private-notes.md
+
+
+# Build artifacts
+*.tar.gz
+*.tar
+*.zip
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Divi-specific files
+.divi/
+!.divi/divi.conf
+!.divi/masternode.conf
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Compiled binaries
+*.exe
+*.out
+*.app
+
+# Miscellaneous
+*.cache
+*.pid
+*.seed
+*.pid.lock

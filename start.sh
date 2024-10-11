@@ -52,6 +52,14 @@ configure_divi() {
       echo regtest=1 >> ${DIVI_CONF}
     fi
 
+    if [ x"${DIVI_RPCPORT}" != "x" ]; then
+      echo rpcport=${DIVI_RPCPORT} >> ${DIVI_CONF}
+    fi
+
+    if [ x"${DIVI_PORT}" != "x" ]; then
+      echo port=${DIVI_PORT} >> ${DIVI_CONF}
+    fi
+
     # Connect via a SOCKS5 proxy
     if [ x"${DIVI_PROXY}" != "x" ]; then
       echo proxy=${DIVI_PROXY} >> ${DIVI_CONF}

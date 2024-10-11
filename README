@@ -47,6 +47,8 @@ docker run -d --name divid_container divi_v2 -e DIVI_SNAPSHOT=true
 - `DIVI_RPCUSER`: Set the RPC username (default: `divirpc`)
 - `DIVI_RPCPASSWORD`: Set the RPC password (default: random)
 - `DIVI_OPENRPC`: Allow all IP addresses to connect to the RPC server (default: `false`)
+- `DIVI_RPCPORT`: Set the RPC port (default: `51473`)
+- `DIVI_PORT`: Set the P2P port (default: `51472`)
 - `DIVI_TESTNET`: Enable testnet mode (default: `false`)
 - `DIVI_REGTEST`: Enable regtest mode (default: `false`)
 - `DIVI_SNAPSHOT`: Enable snapshot mode for faster synchronization (default: `false`)
