@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  divid_node_1:
+    image: divi_v2
+    environment:
+      - DIVI_REGTEST=true
+      - DIVI_ADDNODE_1=divid_node_1
+      - DIVI_ADDNODE_2=divid_node_2
+      - DIVI_ADDNODE_3=divid_node_3
+
+  divid_node_2:
+    image: divi_v2
+    environment:
+      - DIVI_REGTEST=true
+      - DIVI_ADDNODE_1=divid_node_1
+      - DIVI_ADDNODE_2=divid_node_2
+      - DIVI_ADDNODE_3=divid_node_3
+
+  divid_node_3:
+    image: divi_v2
+    environment:
+      - DIVI_REGTEST=true
+      - DIVI_ADDNODE_1=divid_node_1
+      - DIVI_ADDNODE_2=divid_node_2
+      - DIVI_ADDNODE_3=divid_node_3
