@@ -1,5 +1,3 @@
-
-
 # Divi Daemon Docker Image
 
 This Docker image provides a containerized setup for running the Divi daemon (divid). It's based on Alpine Linux and includes the necessary dependencies to run the Divi node.
@@ -83,6 +81,3 @@ For detailed examples of various usage scenarios, please refer to the following 
 4. [EXAMPLE_SNAPSHOT.md](EXAMPLE_SNAPSHOT.md): Explains how to run the Divi Docker container while downloading the network snapshot for quicker startup.
 
 These example files provide specific use cases and command-line instructions to help you configure the Divi Docker container for various scenarios.
-
-
-
