@@ -154,16 +154,23 @@ if [ x"${DIVI_DEBUG_TIMEOUT}" != "x" ]; then
   echo $(date -Is) "Setting DIVI_DEBUG_TIMEOUT to ${timeout} seconds"
 fi
 
-while [ ! -f "${DIVI_DATADIR}/debug.log" ]; do
+if [ x"${DIVI_REGTEST}" != "x" ]; then
+  DIVI_DEBUG_FILE="${DIVI_DATADIR}/regtest/debug.log"
+else
+  DIVI_DEBUG_FILE="${DIVI_DATADIR}/debug.log"
+fi
+
+while [ ! -f "${DIVI_DEBUG_FILE}" ]; do
     current_time=$(date +%s)
     elapsed_time=$((current_time - start_time))
     
     if [ $elapsed_time -ge $timeout ]; then
-        echo "Timeout: ${DIVI_DATADIR}/debug.log did not appear after ${timeout} seconds. Exiting."
+        echo "Timeout: ${DIVI_DEBUG_FILE} did not appear after ${timeout} seconds. Exiting."
         exit 1
     fi
     
     sleep 1
 done
 
-tail -f ${DIVI_DATADIR}/debug.log
+echo $(date -Is) "DIVI_DEBUG_FILE ${DIVI_DEBUG_FILE} exists. Following the log file."
+tail -f ${DIVI_DEBUG_FILE}
