@@ -80,4 +80,8 @@ For detailed examples of various usage scenarios, please refer to the following 
 
 4. [EXAMPLE_SNAPSHOT.md](EXAMPLE_SNAPSHOT.md): Explains how to run the Divi Docker container while downloading the network snapshot for quicker startup.
 
+5. [EXAMPLE_REGTEST.md](EXAMPLE_REGTEST.md): Details how to run the Divi Docker container in regtest mode for local testing.
+
+6. [EXAMPLE_REGTEST_COMPOSE.md](EXAMPLE_REGTEST_COMPOSE.md): Shows how to use Docker Compose to run the Divi Docker container in regtest mode with multiple services.
+
 These example files provide specific use cases and command-line instructions to help you configure the Divi Docker container for various scenarios.
