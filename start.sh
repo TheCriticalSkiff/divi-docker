@@ -173,4 +173,4 @@ while [ ! -f "${DIVI_DEBUG_FILE}" ]; do
 done
 
 echo $(date -Is) "DIVI_DEBUG_FILE ${DIVI_DEBUG_FILE} exists. Following the log file."
-tail -f ${DIVI_DEBUG_FILE}
+tail -n +1 -f ${DIVI_DEBUG_FILE}
