@@ -1,10 +1,10 @@
-# How to Use Testnet Mode with Divi Docker Image
+# How to Use Regtest Mode with Divi Docker Image
 
-This guide demonstrates how to run the Divi Docker container to connect to the Divi testnet.
+This guide demonstrates how to run the Divi Docker container using REGTEST.
 
 ## Basic Usage
 
-To run the Divi Docker container with testnet mode, use the following format:
+To run the Divi Docker container with regtest mode, use the following format:
 
 ```bash
 docker run -d --name divid_container \
